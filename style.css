@@ -1,0 +1,569 @@
+/*
+Theme Name: Bluespier
+Author: Christine Lyston
+Author URI: https://christinelyston.co.uk/
+Description: Bluespier
+Version: 1.0
+License: GNU General Public License
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url(styles/reset.css);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+
+/* Header */
+
+header {
+  color: #FFFFFF;
+  background-color: #5688b3;
+  height: 35vh;
+  padding: 3rem;
+  background-image: linear-gradient(rgba(86, 136, 179, 0.98), rgba(86, 136, 179, 0.98)), url("https://christine.sobold.dev/wp-content/uploads/2018/05/logo-overlay-header.png");
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position-x: 25%;
+  background-position-y: 0%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 18rem;
+}
+
+#nav-list {
+  display: flex;
+}
+
+#menu-nav-menu {
+  display: flex;
+}
+
+nav li {
+  text-transform: uppercase;
+  padding: 1.5rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.15s;
+  font-weight: 500;
+}
+
+nav a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+
+nav li:hover {
+  opacity: 1;
+  background-color: rgba(255,255,255, 0.1);
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.tagline h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* Intro Section */
+
+.intro-contact {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 96vw;
+  padding-top: 5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: relative;
+  top: -2rem;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 0 1rem;
+}
+
+.intro h2 {
+  font-size: 2.8rem;
+  color: #4D4E4C;
+  text-align: center;
+}
+
+iframe, #player {
+  margin: 1.5rem 0;
+  width: 100%;
+  height: 20rem;
+}
+
+.intro p {
+  color: #7F8C92;
+}
+
+strong {
+  font-weight: 400;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+  margin: 0 1rem;
+}
+.contact-section h3 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.contact-section i {
+  font-size: 2.3rem;
+  padding-right: 1rem;
+  color: #39a9e9;
+}
+
+form {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, textarea {
+  color: #ADB9C6;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #E6E6E6;
+  width: 90%;
+}
+
+#consent {
+  width: auto;
+}
+
+.main-button, .wpcf7-submit {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #447CAB;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  border: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.main-button:hover {
+  background-color: #3FCFCC;
+}
+
+.consent-div {
+  margin: 1rem 0 2rem 0;
+}
+
+
+/* Our Products & Contact Info */
+
+.wrapper {
+  border-top: 1px solid #E6E6E6;
+  margin: 5rem 0;
+}
+
+.products-contact {
+  margin: 10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-contact h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.products-contact p {
+  color: #ADB9C6;
+}
+
+.products {
+  margin: 0 1rem;
+  width: 100%;
+}
+
+.products li {
+  color: #ADB9C6;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid #E6E6E6;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.products-img {
+  height: 2.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
+
+.sns {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.fab {
+  color: #3FCFCC;
+  padding-left: 1rem;
+}
+
+.contact-info {
+  margin: 0 1rem;
+}
+
+.contact-info h4 {
+  margin: 3rem 0;
+}
+
+.contact-info p {
+  padding: 0.5rem;
+  transition: 0.3s ease;
+  cursor: pointer
+}
+
+.contact-info p:hover {
+  color: #447CAB;
+}
+
+.contact-info i {
+  font-size: 1.6rem;
+  padding-right: 1rem;
+  color: #39a9e9;
+}
+
+.contact-info button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+
+/* Call Back Card */
+
+.callback-card {
+  background-color: #447CAB;
+  color: white;
+  padding: 3rem 0;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  width: 90vw;
+  justify-self: center;
+}
+
+.callback-card h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.callback-card button {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #3FCFCC;
+  padding: 1.5rem 3rem;
+  margin: 1.5rem;
+  border-radius: 5rem;
+  border: none;
+  width: 75%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.callback-card button:hover {
+  background-color: rgba(49, 196, 193, 0.9);
+}
+
+.callback-card i {
+  display: none;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #3FCFCC;
+  color: #FEFEFE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p, li {
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links li::after {
+  display: none;
+}
+
+.footer-links li:nth-of-type(4)::after {
+  display: none;
+}
+
+
+/* Tablet View */
+
+@media screen and (min-width: 700px) {
+
+  /* Header */
+
+  header {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 380%;
+    background-position-y: -10%;
+    position: relative;
+  }
+
+  .tagline {
+    height: 80%;
+  }
+  
+  .tagline h1 {
+    font-size: 4rem;
+  }
+
+
+  /* Intro Section */
+
+  iframe, #player {
+    height: 45rem;
+  }
+
+
+  /* Our Products & Contact Info */
+
+  .products-contact {
+    justify-content: center;
+  }
+
+  .products-contact h4 {
+    font-size: 2.5rem;
+  }
+
+  .products {
+    width: 50%;
+  }
+
+  .contact-info {
+    max-width: 40%;
+  }
+
+  .contact-info h4 {
+    margin-top: 0;
+  }
+
+  .contact-info p {
+    width: 75%;
+  }
+
+  .contact-info button {
+    width: 75%;
+  }
+
+  .callback-card {
+    width: 30rem;
+    height: 30rem;
+    padding: 0 2rem;
+    margin: 0;
+    margin-top: 3rem;
+  }
+
+  .callback-card h2 {
+    font-size: 3rem;
+  }
+
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .footer-links ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links li::after {
+    display: inline-block;
+    content: "|";
+    color: #FEFEFE;
+    opacity: 0.8;
+    margin: 0 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+
+/* Desktop View */
+
+@media screen and (min-width: 1080px) {
+
+  /* Header */
+
+  header {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 300%;
+    background-position-y: -10%;
+    position: relative;
+  }
+
+  #logo {
+    width: 23rem;
+  }
+
+  .tagline h1 {
+    font-size: 5.2rem;
+    width: 50%;
+    line-height: 1.3;
+  }
+
+
+  /* Intro Section */
+
+  .intro-contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro {
+    padding-right: 7vw;
+    padding-left: 1vw;
+  }
+
+  .contact-section {
+    padding-right: 4vw;
+    width: 80vw;
+  }
+
+  form input, textarea {
+    width: 95%;
+  }
+  
+  .main-button {
+    width: 75%;
+  }
+
+
+  /* Our Products & Contact Info */
+
+  .products-contact {
+    padding: 0 3rem;
+    margin: 7rem 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products {
+    width: 35vw;
+  }
+  
+  .contact-info {
+    width: 25vw;
+  }
+
+  .callback-card {
+    margin: 0;
+  }
+
+  .callback-card i {
+    display: inline-block;
+    padding-left: 1rem;
+    color: #FFFFFF;
+  }
+
+  
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 3rem;
+  }
+
+  footer p, li {
+    opacity: 0.8;
+  }
+
+  .footer-links {
+    width: 50%;
+  }
+
+  .footer-links ul {
+    display: flex;
+  }
+}
